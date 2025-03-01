@@ -9,14 +9,17 @@ import Careem from './Component/Careem';
 import RideTable from './Component/RideTable';
 import Ticketbooking from './Component/Ticketbooking';
 import ShowTicket from './Component/ShowTicket';
+import Signup from './Component/SignUp';
+import Dashboard from './Component/Dashboard';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
       <Routes>
-        <Route path='/' element={<Ticketbooking />} />
-        <Route path='/ticket' element={<ShowTicket/>} />
+        <Route path='/' element={<Login />} />
+        <Route path='/signup' element={<Signup/>} />
+        <Route path='/dashboard' element={<Dashboard />}/>
       </Routes>
     </div>
     </BrowserRouter>
